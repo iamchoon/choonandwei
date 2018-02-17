@@ -1,182 +1,563 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+  <meta name="description" content="Choon & Wei - 09.06.2018 - We are getting married!">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <title>Choon & Wei - 09.06.2018</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
 
-    <title>C & W - 2 0 1 8</title>
+  <style>
+    html, body {
+      color: #bb985f;
+      font-family: 'Open Sans', sans-serif;
+    }
 
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    body {
+      background-color: #fff;
+      background-image: url(/assets/marble_bg.jpg);
+      background-position: top left;
+      background-repeat: repeat;
+      overflow-x: hidden;
+      min-width: 320px;
+      max-width: 768px;
+      margin: 0 auto;
+      position: relative;
+      padding: 200px 10px 70px;
+    }
 
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    #header {
+      text-align: center;
+    }
 
-    <!-- Theme CSS -->
-    <link href="css/grayscale.min.css" rel="stylesheet">
+    .handwritten {
+      font-family: 'Dancing Script', cursive;
+      font-size: 35px;
+    }
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    .lighter {
+      letter-spacing: 2px;
+      font-weight: 400;
+      font-size: 20px;
+    }
 
+    section {
+      margin: 10px 0;
+    }
+
+    section img {
+      max-width: 400px;
+      width: 100%;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        border-bottom: 2px solid #c5a471;
+    }
+
+    a, a:hover {
+      color: #c5a471;
+    }
+
+    section {
+      position: relative;
+    }
+
+    .leaf-1 {
+      background-image: url("/assets/sprite.png");
+      background-position: -135px -1719px;
+      width: 258px;
+      height: 342px;
+      position: absolute;
+      top: 0;
+      left: -150px;
+    }
+
+    .leaf-2 {
+      background-image: url("/assets/sprite.png");
+      background-position: -463px -1660px;
+      width: 370px;
+      height: 95px;
+      position: absolute;
+      top: 0;
+      left: 120px;
+    }
+
+    .leaf-3 {
+      background-image: url("/assets/sprite.png");
+      background-position: -593px -1758px;
+      width: 284px;
+      height: 512px;
+      position: absolute;
+      top: 0px;
+      right: -300px;
+    }
+
+    .leaf-4 {
+      background-image: url("/assets/sprite.png");
+      background-position: -593px -1758px;
+      width: 284px;
+      height: 512px;
+      position: absolute;
+      top: 100px;
+      left: -200px;
+      transform: scale(0.7);
+    }
+
+    .leaf-5 {
+      background-image: url("/assets/sprite.png");
+      background-position: -593px -1758px;
+      width: 284px;
+      height: 512px;
+      position: absolute;
+      bottom: -200px;
+      right: -100px;
+      transform: scale(0.6) rotate(16deg);
+    }
+
+    .leaf-6 {
+      background-image: url("/assets/sprite.png");
+      background-position: -593px -1758px;
+      width: 284px;
+      height: 512px;
+      position: absolute;
+      top: -115px;
+      left: -146px;
+      transform: scale(0.8) rotate(140deg);
+    }
+
+    .leaf-7 {
+      background-image: url("/assets/sprite.png");
+      background-position: -593px -1758px;
+      width: 284px;
+      height: 512px;
+      position: absolute;
+      top: -200px;
+      right: -50px;
+      transform: scale(0.8) rotate(273deg);
+    }
+
+    .leaf-8 {
+      background-image: url("/assets/sprite.png");
+      background-position: -593px -1758px;
+      width: 284px;
+      height: 512px;
+      position: absolute;
+      bottom: -200px;
+      right: -100px;
+      transform: scale(0.8);
+    }
+
+    #header {
+      background-image: url("/assets/sprite.png");
+      background-position: -510px -312px;
+      width: 458px;
+      height: 330px;
+      margin: 0px auto 50px;
+      transform: scale(0.9);
+    }
+
+    .church {
+      background-image: url("/assets/sprite.png");
+      background-position: -40px -35px;
+      width: 105px;
+      height: 85px;
+      padding-left: 110px;
+      padding-top: 57px;
+      font-size: 24px;
+      box-sizing: border-box;
+      font-weight: bold;
+    }
+
+    .when {
+      font-size: 24px;
+      box-sizing: border-box;
+      font-weight: bold;
+    }
+
+    .old-bell {
+      background-image: url("/assets/sprite.png");
+      background-position: -18px -377px;
+      width: 314px;
+      height: 69px;
+      margin: 15px -5px 20px;
+      box-sizing: border-box;
+    }
+
+    .down-arrow {
+      background-image: url("/assets/sprite.png");
+      background-position: -771px -48px;
+      width: 77px;
+      height: 72px;
+      position: absolute;
+      bottom: -110px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+
+    #where {
+      margin-top: 300px;
+    }
+
+    #where img {
+      float: left;
+    }
+
+    #where p {
+      padding-bottom: 13px;
+      padding-left: 10px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    #where .content {
+      padding-left: 430px;
+    }
+
+    #when {
+      margin-top: 150px;
+      margin-left: 10px;
+    }
+
+    #when .date {
+      float: left;
+      background-image: url("/assets/sprite.png");
+      background-position: -20px -165px;
+      width: 491px;
+      height: 108px;
+      transform: scale(0.8) translateX(-65px);
+    }
+
+    #accomodaiton {
+      margin-bottom: 20px;
+    }
+
+    #accomodaiton .accomodaiton {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      background-image: url("/assets/sprite.png");
+      background-position: -45px -528px;
+      width: 302px;
+      height: 60px;
+      transform: scale(0.8) translateX(-35px);
+    }
+
+    #accomodaiton .hotel-icon {
+      margin: 10px auto;
+      background-image: url("/assets/sprite.png");
+      background-position: -215px -41px;
+      width: 76px;
+      height: 82px;
+      transform: scale(0.8);
+    }
+
+    #accomodaiton p {
+      padding-bottom: 13px;
+      padding-left: 10px;
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    #accomodaiton .rates {
+      text-align: center;
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
+
+    #when p {
+      padding-bottom: 13px;
+      padding-left: 10px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    #when p:first-of-type {
+      margin-top: 25px;
+    }
+
+    #transport .transport {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      background-image: url("/assets/sprite.png");
+      background-position: -39px -619px;
+      width: 211px;
+      height: 70px;
+      transform: scale(0.8) translateX(-35px);
+    }
+
+    #transport .train {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      background-image: url("/assets/sprite.png");
+      background-position: -357px -35px;
+      width: 91px;
+      height: 90px;
+      transform: scale(0.8);
+      float: left;
+    }
+
+    #transport .car {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      background-image: url("/assets/sprite.png");
+      background-position: -507px -37px;
+      width: 91px;
+      height: 90px;
+      transform: scale(0.8);
+      float: left;
+    }
+
+    #schedule {
+      background: #eaeaea;
+      text-align: center;
+      padding-bottom: 70px;
+    }
+
+    #schedule .hours {
+      text-align: left;
+      max-width: 400px;
+      margin: 0 auto 30px;
+    }
+
+    #schedule .hours p {
+      padding-bottom: 33px;
+      font-size: 16px;
+      letter-spacing: 0.7px;
+      line-height: 30px;
+    }
+
+    #schedule .schedule {
+      background-image: url("/assets/pics/schedule.png");
+      height: 230px;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 0 auto;
+      max-width: 75%;
+      background-size: contain;
+    }
+
+    #schedule .rsvp, #schedule .rsvp:hover {
+      background-color: #3b3b3b;
+      padding: 7px;
+      line-height: 30px;
+      color: #fff;
+      max-width: 400px;
+      margin: 0 auto;
+      display: block;
+      font-weight: 600;
+      text-decoration: none;
+      border: 0;
+      letter-spacing: 1px;
+    }
+
+    #schedule .rsvp:hover {
+      opacity: 0.7;
+    }
+
+    #collage img {
+        max-width: none;
+    }
+
+    img.collage {
+      margin: 30px auto;
+      width: 98%;
+      display: block;
+    }
+
+    .train-directions {
+      line-height: 30px;
+      padding-left: 110px;
+      margin-bottom: 15px;
+      max-width: 450px;
+    }
+
+    .car-directions {
+      line-height: 30px;
+      text-indent: 20px;
+      padding-top: 38px;
+    }
+
+    @media (max-width: 800px) {
+      body {
+        padding-top: 73px;
+      }
+
+      .leaf-1 {
+        top: -70px;
+        left: -110px;
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+      }
+      .leaf-2 {
+        top: -10px;
+        left: -80px;
+        -webkit-transform: scale(0.5) rotate(18deg);
+        transform: scale(0.5) rotate(18deg);
+      }
+
+      .leaf-3 {
+        position: absolute;
+        top: -65px;
+        right: -130px;
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+      }
+
+      .leaf-6 {
+        display: none;
+      }
+
+      .down-arrow {
+        -webkit-transform: translateX(-50%) scale(0.5);
+        transform: translateX(-50%) scale(0.5);
+      }
+
+      #header {
+        width: 263px;
+        height: 195px;
+        background-size: 220% auto;
+        background-position: -283px -175px;
+      }
+
+      section img {
+        max-width: 200px;
+        width: 100%;
+      }
+
+      #where {
+        margin-top: 30px;
+        padding-top: 100px;
+      }
+
+      #where .content {
+        padding-left: 50px;
+        margin-left: -20px;
+        transform: scale(0.8);
+      }
+
+      #where img {
+        display: none;
+      }
+
+      #when {
+        margin-top: 100px;
+      }
+
+      #accomodaiton {
+        margin-top: 70px;
+      }
+
+      #when .date {
+        float: none;
+        transform: scale(0.6) translateX(-120px);
+      }
+
+      #transport {
+        margin-bottom: 50px;
+      }
+
+      #schedule {
+        padding: 0px 20px 50px;
+      }
+
+      #schedule .schedule {
+        height: 150px;
+      }
+
+    }
+
+    section:before,
+    section:after,
+    .clear {
+      content: "";
+      display: table;
+    }
+    section:after,
+    .clear {
+      clear: both;
+    }
+    section, .clear {
+      zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+    }
+  </style>
 </head>
-
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class=""></i> CHOON <span class="light">& WEI</span> 
-                </a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">DETAILS</a>
-                    </li>
-                     <li>
-                        <a class="page-scroll" href="#">LOCATION</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#download">SLEEPING OVER?</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">RSVP</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Choon <br>& Wei</h1>
-                        <p class="intro-text">are getting married
-                            <br>0 9 &nbsp;. 0 6 &nbsp;. 2 0 1 8</p>
-                        <a href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Details</h2>
-                <p>Grayscale is a free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, simply download the template on <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
-                <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
-                <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Map Section -->
-    <section id="download" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2481.1995217546473!2d-0.8121690490605935!3d51.5462403155843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870adacfa959a31%3A0xa050644f4f85b34d!2sThe+Olde+Bell!5e0!3m2!1sen!2suk!4v1502311948104" width="100%" height="560" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- Download Section -->
-    <section id="download" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Download Grayscale</h2>
-                    <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-                    <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Start Bootstrap</h2>
-                <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
-                <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
-                </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Map Section -->
-    <div id="map"></div>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-            <p>Copyright &copy; Your Website 2016</p>
-        </div>
-    </footer>
-
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/grayscale.min.js"></script>
-
+<body>
+  <div class="leaf-1"></div>
+  <div class="leaf-2"></div>
+  <section id="header">
+    <div class="leaf-3"></div>
+    <div class="down-arrow"></div>
+  </section>
+  <section id="where">
+    <img src="/assets/pics/main_image.jpg"/>
+    <div class="leaf-4"></div>
+    <div class="content">
+      <h3 class="church">WHERE</h3>
+      <h3 class="old-bell"></h3>
+      <p>High Street Hurley,</p>
+      <p>Berkshire</p>
+      <p>SL6 5LX</p>
+    </div>
+  </section>
+  <section id="when">
+    <h3 class="when">WHEN</h3>
+    <div class="date"></div>
+    <p>Wedding Ceremony - 2pm</p>
+    <p>Ends Midnight</p>
+  </section>
+  <section id="collage">
+    <img class="collage" src="/assets/pics/collage.png"/>
+    <div class="leaf-5"></div>
+  </section>
+  <section id="accomodaiton">
+    <div class="accomodaiton"></div>
+    <p>There is accomodation at the venue and rooms have been reserved under &quot;Wei and Choon&quot;. Please feel free to book a room directly with the Olde Bell on 01628 825 881 or email <a href="mailto:weddings@coachinginn.co.uk">weddings@coachinginn.co.uk</a> quoting our names.<br/> Wedding rates as below:</p>
+    <div class="hotel-icon"></div>
+    <p class="rates">STANDARD £135 | SUPERIOR £145 | DELUXE £165 | LUXURY £175</p>
+  </section>
+  <section id="transport">
+    <div class="transport"></div>
+    <div>
+      <div class="train"></div>
+      <div class="train-directions">
+        <p>
+          By Train - From London Paddington, trains depart every 15 minutes to Maidenhead, journey time 40 minutes.<br/>
+          On arrival at Maidenhead station there is a taxi rank with a journey time of 10 minutes.
+        </p>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <div>
+      <div class="car"></div>
+      <div class="car-directions">
+        <p>By Car - Use Google Maps, it&apos;s 2018!</p>
+      </div>
+    </div>
+  </section>
+  <section id="schedule">
+    <div class="leaf-6"></div>
+    <div class="leaf-7"></div>
+    <div class="leaf-8"></div>
+    <div class="schedule"></div>
+    <div class="hours">
+      <p>1.30PM ........... Guests arrive at the Tithe Barne</p>
+      <p>2.00PM ........... Wedding Ceremony</p>
+      <p>2.30PM ........... Reception Drinks and Canapes</p>
+      <p>4.00PM ........... Speeches and Dinner</p>
+      <p>7.00PM ........... PARTY BEGINS</p>
+      <p>10.30PM ......... Surprise</p>
+      <p>12.30PM ......... End of beautiful day!</p>
+    </div>
+    <a href="https://goo.gl/forms/7pR001zcT3JG5iBK2" class="rsvp">RSVP NOW</a>
+  </section>
 </body>
-
 </html>
